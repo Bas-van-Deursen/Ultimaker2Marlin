@@ -288,7 +288,7 @@ static void lcd_menu_first_run_bed_level_paper_right()
 static void parkHeadForHeating()
 {
     lcd_material_reset_defaults();
-    enquecommand_P(PSTR("G1 F12000 X110 Y10"));
+    enquecommand_P(PSTR("G1 F12000 X100 Y100"));
     enquecommand_P(PSTR("M84"));//Disable motor power.
 }
 
